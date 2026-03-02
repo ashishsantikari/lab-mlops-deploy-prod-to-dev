@@ -1,6 +1,10 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# LAB | MLOps Deployment Workflow (DEV → PRD)
+# LAB | MLOps Deployment Workflow (DEV → PROD)
+
+## What you are shipping
+
+In this lab, you will collaborate on a small project repository that contains **all files required to run the project** (script or notebook) and share the **exact environment** needed to run it. 
 
 Work in pairs to simulate a real ML engineering workflow:
 
@@ -31,6 +35,10 @@ Work in pairs to simulate a real ML engineering workflow:
   ```
 
 * Add your code (all files necessary for the project)
+  * **Required files (minimum)**
+    * `README.md`
+    * your project code (script or notebook)
+    <!-- * `environment.yml` -->
 
 * Commit and push **your branch only**:
 
@@ -41,6 +49,8 @@ Work in pairs to simulate a real ML engineering workflow:
   ```
 
 * Open a Pull Request → from your branch into `main`
+
+:exclamation: If you need to update the PR, commit and push to the same branch again. The PR will update automatically.
 
 ## Gatekeeper after PR
 
@@ -151,3 +161,8 @@ After merging the PR, before testing the code:
 * Run the project (script or notebook).
 
   * If it fails, the Developer must fix the environment file and update the PR.
+
+## Things to keep in mind
+
+* If you already created `project-env` before, you may need to remove it or use a different name.
+* Consider adding a `.gitignore` so you don’t commit unnecessary files (env folders, caches, `.ipynb_checkpoints`, `__pycache__`, etc.).  
